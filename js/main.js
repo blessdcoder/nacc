@@ -107,3 +107,21 @@
     
 })(jQuery);
 
+// My Custom JS
+
+function copyToClipboard(account_number) {
+    var copyText = document.getElementById(account_number).innerText;
+    navigator.clipboard.writeText(copyText).then(function() {
+        alert('Account number copied to clipboard');
+        // Notify user
+        var notification = document.createElement('div');
+        notification.className = 'copy-notification';
+        notification.innerText = 'Copied!';
+        document.body.appendChild(notification);
+        setTimeout(function() {
+            document.body.removeChild(notification);
+        }, 2000);
+    }, function(err) {
+        console.error('Could not copy text: ', err);
+    });
+}

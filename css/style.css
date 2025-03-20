@@ -513,3 +513,45 @@
 .custom5 {
     margin-top: 25%;
 }
+
+.custom76 {
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.custom7 {
+    background: linear-gradient(rgba(154, 187, 171, 0.9), rgba(187, 185, 143, 0.9)), url(../img/donation4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    transition: .5s;
+}
+
+.custom8 {
+    font-size: 20px;
+    color: var(--primary);
+    width: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 10px;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* IDs */
+
+#account-number{
+    cursor: copy;
+}
